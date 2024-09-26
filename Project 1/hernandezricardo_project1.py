@@ -95,7 +95,7 @@ def decToEnglish(baseTenNum):
   #Segment baseTenNum into parts. Keep in mind that numbers like 12 are read
   #"Twelve" and not "Ten two"
   #If baseTenNum % 100 is between 11 and 19, do not assign anything to ones
-  if baseTenNum % 100 >= 11 and baseTenNum % 100 <= 19:
+  if baseTenNum % 100 >= 10 and baseTenNum % 100 <= 19:
     uniqueNumber = True
     tens = baseTenNum % 100
     baseTenNum -= tens
@@ -131,6 +131,8 @@ def decToEnglish(baseTenNum):
       englishRepresentation += "Nine Hundred "
   #Next English representations, add tens
   match(tens):
+    case 10:
+      englishRepresentation += "Ten "
     case 11:
       englishRepresentation += "Eleven "
     case 12:
