@@ -7,8 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1goqHeqrb2nDJtp5K0pWgenj4E1fwaxMN
 """
 
-#Ricardo Hernandez
+#Author: Ricardo Hernandez
+#Course: CMSC206
+#Professor: Gary Thai
+#Due Date: 9/25/2024
 
+#This program is responsible for converting the date from a shortened format to
+#an extended format. Accepts a string argument in one of the following formats:
+#mm/dd/yy, m/dd/yy, mm/d/yy, or m/d/yy
 def extendDate(date):
   validDate = True
   leapYear = True
